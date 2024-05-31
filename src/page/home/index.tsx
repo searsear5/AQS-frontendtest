@@ -33,8 +33,8 @@ const Homepage: React.FC = () => {
 
   return (
     <div className="space-y-8">
-      <div className="flex justify-center">
-        <div className="bg-gray-100 w-72 h-11 my-8 rounded-3xl flex items-center">
+      <div className="flex justify-center sticky top-1 z-50">
+        <div className="bg-gray-100 sticky top-0 w-72 h-11 my-8 rounded-3xl flex items-center">
           <div className="w-24 h-9 font-bold text-sm text-gray-500 bg-white mx-1 my-2 flex rounded-3xl text-center items-center justify-center">
             Home
           </div>
@@ -93,6 +93,15 @@ const Homepage: React.FC = () => {
           <div className="text-5xl flex justify-center ">Get in touch.</div>
         </div>
       </FadeInSection>
+      <div className="w-full h-20 bg-white"></div>
+      <div className="flex justify-center sticky bottom-5 ">
+        <div className="flex sticky bottom-1 z-50 bg-black rounded-3xl w-24 h-9 justify-center align-middle items-center">
+          <button className="flex sticky text-white">
+            <img className="" src="/bx-health.svg" alt="" />
+            shop
+          </button>
+        </div>
+      </div>
     </div>
   );
 };
